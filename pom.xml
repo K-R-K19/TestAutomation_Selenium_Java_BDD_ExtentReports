@@ -5,14 +5,58 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging> 
    
-    <dependencies>  
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependencies>
+
+  	<!--Selenium Dependencies-->  
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.27.0</version>
 </dependency>
 
-    </dependencies>
-      
+	<!--Cucumber Dependencies-->
+	<!--This is the core Cucumber dependency for Java-based projects-->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.20.1</version>
+</dependency>
+
+	<!--For using junit as unit test framework along with cucumber-->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.20.1</version>
+</dependency>
+
+<!-- Cucumber Reporting for generating reports (Optional) -->
+ <dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>maven-cucumber-reporting</artifactId>
+    <version>4.11.2</version>
+</dependency>
+
+    <!-- JUnit (usually version 4 or 5) for running the tests -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+</dependency>
+    </dependencies>      
+    
+<build>
+    <plugins>
+        <!-- Maven Compiler Plugin for compiling Java code -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version> <!-- You can use the latest version -->
+            <configuration>
+                <source>1.8</source> <!-- Set the Java version for source code -->
+                <target>1.8</target> <!-- Set the Java version for compiled classes -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
 </project>
