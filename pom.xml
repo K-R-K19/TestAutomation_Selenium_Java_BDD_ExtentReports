@@ -3,7 +3,8 @@
   <groupId>TestAutomation_Selenium_Java_BDD_ExtentReports</groupId>
   <artifactId>TestAutomation_Selenium_Java_BDD_ExtentReports</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-    
+  <packaging>jar</packaging> 
+   
     <dependencies>  
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -11,7 +12,6 @@
     <artifactId>selenium-java</artifactId>
     <version>4.27.0</version>
 </dependency>
-
 
     </dependencies>
       
